@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo Building started
+      - mvn clean install
+    post_build:
+      - echo Build completed succesfully
+
+artifacts:
+  files:
+    - target/demo.jar
